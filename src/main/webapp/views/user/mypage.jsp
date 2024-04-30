@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 </head>
-<jsp:include page="/header"></jsp:include>
+<c:import url="/header"></c:import>
 <body>
 	<section id="root">
 		<h1>${user.name}님 환영합니다!</h1>
@@ -11,5 +12,5 @@
 		<button onclick="location.href='/delete'">회원 탈퇴</button>
 	</section>
 </body>
-<jsp:include page="/footer"></jsp:include>
+<c:import url="/footer"></c:import>
 </html>
