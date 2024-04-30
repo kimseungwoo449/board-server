@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	
+	<display-name>board-server-guide</display-name>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- JSP files mapping -->
+	<servlet>
+		<servlet-name>header</servlet-name>
+		<jsp-file>/views/module/header.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>header</servlet-name>
+		<url-pattern>/header</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>footer</servlet-name>
+		<jsp-file>/views/module/footer.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>footer</servlet-name>
+		<url-pattern>/footer</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>joinForm</servlet-name>
+		<jsp-file>/views/user/joinForm.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>joinForm</servlet-name>
+		<url-pattern>/join</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>joinFormPro</servlet-name>
+		<jsp-file>/views/user/joinFormPro.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>joinFormPro</servlet-name>
+		<url-pattern>/joinPro</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>myPage</servlet-name>
+		<jsp-file>/views/user/mypage.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myPage</servlet-name>
+		<url-pattern>/mypage</url-pattern>
+	</servlet-mapping>
+
+	
+	<servlet>
+		<servlet-name>logIn</servlet-name>
+		<jsp-file>/views/user/logInForm.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logIn</servlet-name>
+		<url-pattern>/logIn</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>logInPro</servlet-name>
+		<jsp-file>/views/user/logInFormPro.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logInPro</servlet-name>
+		<url-pattern>/logInPro</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateUserForm</servlet-name>
+		<jsp-file>/views/user/updateUserForm.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateUserForm</servlet-name>
+		<url-pattern>/updateUserForm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateUserFormPro</servlet-name>
+		<jsp-file>/views/user/UpdateUserFormPro.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateUserFormPro</servlet-name>
+		<url-pattern>/UpdateUserFormPro</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>logOutPro</servlet-name>
+		<jsp-file>/views/user/logOutFormPro.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logOutPro</servlet-name>
+		<url-pattern>/logOutPro</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<jsp-file>/views/user/deleteForm.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deletePro</servlet-name>
+		<jsp-file>/views/user/deleteFormPro.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deletePro</servlet-name>
+		<url-pattern>/deletePro</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
